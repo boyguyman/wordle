@@ -1,0 +1,31 @@
+/* gap을 주면 하위요소에 적용이 되기 때문에, board-column 내부에는 하위 요소가 없어 main에 gap을 적용해야한다. */
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d3d6da;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+}
